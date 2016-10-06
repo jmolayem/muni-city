@@ -51,6 +51,7 @@
   "devDependencies": {
     "eslint": "^1.10.2",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-util": "^3.0.7",
     "parallelshell": "^2.0.0"
   }
 }

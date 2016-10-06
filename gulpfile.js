@@ -19,6 +19,10 @@ var gulp = require('gulp'),
     del = require('del'),
     deploy = require('gulp-gh-pages');
 
+gulp.task("heroku:production", function(){
+    console.log('hello'); // the task does not need to do anything.
+});
+
 gulp.task('fileinclude', function() {
   return  gulp.src(['src/index.html', 'src/iframe.html', 'src/CNAME'])
     .pipe(gulp.dest('dist'))
