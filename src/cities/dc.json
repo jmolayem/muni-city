@@ -1,5 +1,5 @@
 {
-    "url_name": "dc",
+    "url_name": "la",
     "name": "D.C. Energy Benchmarking",
     "logo_link_url": "www.facebook.com",
     "address_search_regional_context": "District of Columbia",
@@ -24,25 +24,23 @@
     "backgroundTileSource": "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png",
     "labelTileSource": "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_only_labels/{z}/{x}/{y}.png",
     "center": [
-      38.889931,
-      -77.009003
+      34.0519,
+      -118.2445
     ],
-    "zoom": 12,
-    "categoryDefaults": [{"field":"report_status","values":["In Compliance"],"other":false}],
-    "cartoDbUser": "dcenergybenchmarkingproject",
+    "zoom": 10,
+    "cartoDbUser": "jeremymolayem",
     "property_id": "cartodb_id",
     "property_name": "property_name",
     "building_type": "primary_ptype_epa",
     "popup_fields": [
         {"field": "property_name", "label": "Property Name: "},
         {"field": "owner_of_record", "label": "Owner of Record: "},
-        {"field": "reported_address", "label": "Reported Address: "},
+        {"field": "address_1", "label": "Reported Address: "},
         {"field": "report_status", "label": "Report Status: "},
         {"field": "primary_ptype_epa", "label": "Property Type: "},
         {"field": "reported_gross_floor_area", "label": "Property Size (ft²): "},
         {"field": "year_built", "label": "Year Built: "},
         {"field": "energy_star_score", "label": "ENERGY STAR Score: "},
-        {"field": "site_eui", "label": "Site Energy Use Intensity (kBTU/ft²): "},
         {"field": "weather_norm_source_eui", "label": "Weather Normalized Source EUI (kBtu/ft²): "},
         {"field": "water_use", "label": "Water Use: "},
         {"field": "total_ghg_emissions", "label": "Total GHG Emissions (Metric Tons CO₂e): ", "start_hidden": true },
@@ -55,13 +53,13 @@
     ],
     "map_layers": [
         {
-            "title": "district",
+            "title": "Council District",
             "field_name": "district",
             "display_type": "category",
             "sort_by_key": true,
             "hide_other_category": true,
             "section": "Property Information",
-            "description": "district as recorded by the DC Office of Tax and Revenue"
+            "description": "Council District"
         },
         {
             "title": "Property Type",
@@ -202,14 +200,6 @@
     "years": {
         "2013": {
             "table_name": "t2013",
-            "default_layer": "energy_star_score"
-        },
-        "2014": {
-            "table_name": "t2014",
-            "default_layer": "energy_star_score"
-        },
-        "2015": {
-            "table_name": "t2015",
             "default_layer": "energy_star_score"
         }
     }
