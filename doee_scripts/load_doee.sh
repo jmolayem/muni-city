@@ -38,7 +38,7 @@ CREATE TABLE ${TABLENAME}(
     report_status VARCHAR (255),
     address_of_record VARCHAR (255),
     owner_of_record VARCHAR (255),
-    ward VARCHAR (255),
+    district VARCHAR (255),
     reported_address VARCHAR (255),
     city VARCHAR (255),
     state VARCHAR (255),

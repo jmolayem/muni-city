@@ -1,7 +1,7 @@
 {
     "url_name": "dc",
     "name": "D.C. Energy Benchmarking",
-    "logo_link_url": "http://doee.dc.gov/energybenchmarking/",
+    "logo_link_url": "www.facebook.com",
     "address_search_regional_context": "District of Columbia",
     "header_banner_images": [
         {
@@ -51,17 +51,17 @@
         {"field": "district_water_use", "label": "District Water-Based Energy Use: "},
         {"field": "fuel_use", "label": "Diesel and Fuel Oil Use: "},
         {"field": "dc_real_pid", "label": "DC Real Property ID: "},
-        {"field": "ward", "label": "Ward: "}
+        {"field": "district", "label": "district: "}
     ],
     "map_layers": [
         {
-            "title": "Ward",
-            "field_name": "ward",
+            "title": "district",
+            "field_name": "district",
             "display_type": "category",
             "sort_by_key": true,
             "hide_other_category": true,
             "section": "Property Information",
-            "description": "Ward as recorded by the DC Office of Tax and Revenue"
+            "description": "district as recorded by the DC Office of Tax and Revenue"
         },
         {
             "title": "Property Type",

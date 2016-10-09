@@ -30,7 +30,7 @@ def get_connection():
         dbpool.putconn(conn)
 
 def geocode(prop):
-    attrmap = {'pid': 0, 'address': 1, 'city': 2, 'state': 3, 'zip': 4, 'ward': 5 }
+    attrmap = {'pid': 0, 'address': 1, 'city': 2, 'state': 3, 'zip': 4, 'district': 5 }
     full_address = "{} {}, {} {}".format(
         prop[attrmap['address']],
         prop[attrmap['city']] or '',
@@ -73,13 +73,13 @@ if __name__ == '__main__':
         # geocode tablename with an `address_of_record`
         #
         crs = conn.cursor()
-        crs.execute("SELECT pid, address_of_record, city, state, postal_code, ward FROM "+tablename+" WHERE address_of_record IS NOT NULL AND reported_address IS NULL AND needs_geocoding = 1 and is_geocoded = 0")
+        crs.execute("SELECT pid, address_of_record, city, state, postal_code, district FROM "+tablename+" WHERE address_of_record IS NOT NULL AND reported_address IS NULL AND needs_geocoding = 1 and is_geocoded = 0")
         props1 = crs.fetchall()
 
         #
         # geocode tablename with no `address_of_record` but a `reported_address`
         #
-        crs.execute("SELECT pid, reported_address, city, state, postal_code, ward from "+tablename+" WHERE reported_address IS NOT NULL AND needs_geocoding = 1 and is_geocoded = 0")
+        crs.execute("SELECT pid, reported_address, city, state, postal_code, district from "+tablename+" WHERE reported_address IS NOT NULL AND needs_geocoding = 1 and is_geocoded = 0")
         props2 = crs.fetchall()
 
         thread_pool.imap(

@@ -1201,7 +1201,7 @@ Forms
 	height:150px;
 }
 
-.form_label /* used on forward link page and login page*/
+.form_label /* used on fordistrict link page and login page*/
 {
 	padding-top:3px;
 	font-weight: bold;
@@ -1264,29 +1264,29 @@ legend{font-weight: bold;}
 .memberSignup .form_div .form_button{margin-left: 180px;}
 
 /*email form*/
-.forwardlink br{display: none;}
+.fordistrictlink br{display: none;}
 
-.forwardlink input
+.fordistrictlink input
 {
 	margin: 5px 0 5px 150px;
 	display: block;
 }
 
-.forwardlink .recaptcha{margin: 10px 0;}
+.fordistrictlink .recaptcha{margin: 10px 0;}
 
-.forwardlink .form_button
+.fordistrictlink .form_button
 {
 	margin: 10px 0 0 0;
 	display: inline;
 }
 
-.forwardlink .recaptcha input
+.fordistrictlink .recaptcha input
 {
 	margin: 0;
 	display: inline;
 }
 
-.forwardlink textarea
+.fordistrictlink textarea
 {
 	display: block;
 	clear: both;
@@ -2681,10 +2681,10 @@ Feedback lightbox
 	clear: both;
 }
 
-#forward_form br
+#fordistrict_form br
 {display: none;}
 
-#forward_form div br{display: inline;}
+#fordistrict_form div br{display: inline;}
 
 /***Service Request****/
 .sr_logindiv
