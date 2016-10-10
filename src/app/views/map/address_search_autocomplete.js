@@ -65,7 +65,7 @@ define([
       var things = this.things = [];
 
       buildings.forEach(function(building, i){
-        var address = building.get('reported_address');
+        var address = building.get('address_1');
         var property_name = building.get('property_name');
         var lat = building.get('lat');
         var lng = building.get('lng');
